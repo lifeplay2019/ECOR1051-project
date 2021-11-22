@@ -1,0 +1,390 @@
+﻿ECOR 1051 F19 Lab 1 Solutions
+
+Type your solutions to the exercises in the lab handout (file F19_ECOR1051_Lab1.pdf) in the indicated areas.
+
+===========
+Exercise 1: 
+
+>>> 1+2
+
+Result (the value that was displayed): 3
+
+===========
+Exercise 2:
+
+>>> 1 + 2
+
+Result:3
+
+>>> 1     +       2
+
+Result:3
+
+What do you conclude about the significance of spaces in expressions? Does the number of spaces between the operands 
+and operator affect the evaluation? 
+Record your conclusions here:
+Actually the space that been added into the system does not really effect the solution that gives out the result. Which means that the space between the operands and operator does not really affect the solution.
+===========
+Exercise 3:
+
+>>> type(1)
+
+Result:<class 'int'>
+
+>>> type(2)
+
+Result:<class 'int'>
+
+>>> type(0)
+
+Result:<class 'int'>
+
+>>> type(-1)
+
+Result:<class 'int'>
+
+>>> type(255)
+
+Result:<class 'int'>
+
+>>> type(-256)
+
+Result:<class 'int'>
+
+===========
+Exercise 4:
+
+>>> 4 - 1
+
+Result:3
+
+
+>>> 4 - 6
+
+Result:-2
+
+>>> 5 - -9
+
+Result:14
+
+>>> -7 - -2
+
+Result:-3
+
+>>> 2 * 3
+
+Result:6
+
+>>> 4 * -3
+
+Result:-12
+
+>>> -5 * -4
+
+Result:20
+
+It appears that, for integer values, - is the subtraction operator and * is the multiplication operator. 
+What can you conclude about the types of the values produced by these operations?
+
+Record your conclusions here:
+
+===========
+Exercise 5:
+
+>>> 6 / 2
+
+Result:3.0
+
+>>> -6 / 2
+
+Result:-3.0
+
+>>> 6 / -2
+
+Result:-3.0
+
+>>> -6 / -2
+
+Result:3.0
+
+>>> 7 / 2 
+
+Result:3.5
+
+>>> -7 / 2
+
+Result:-3.5
+
+>>> 7 / -2
+
+Result:-3.5
+
+>>> -7 / -2
+
+Result:3.5
+
+>>> 10 / 3
+
+Result:3.3333333333333335
+
+>>> 10 / 6
+
+Result:1.6666666666666667
+
+Use the type function to determine the types of the values produced when one integer is divided by another. 
+Record your conclusions here:
+
+===========
+Exercise 6:
+
+>>> 1 + 2 + 3
+
+Result:6
+
+>>> 5 - 1 - 1 - 1
+
+Result:2
+
+>>> 2 * 2 * 3
+
+Result:12
+
+>>> 12 / 3 / 2
+
+Result:2.0
+
+Does Python support more complicated expressions made up of several operands
+and operators? Record your conclusions here:
+Python support more complicated expressions which made up with several operands and operators
+When the system decied the caluated ....
+===========
+Exercise 7:
+
+>>> 1 + 2 * 3
+
+Result:7
+
+>>> 2 * 3 + 1
+
+Result:7
+
+What do you conclude about the precedence of the * operator relative to the + operator?
+Record your conclusions here:
+For the conclution, the * operator relative to the + operator is higher, which means that when Phyton decide to calculate * has higher level to calculate
+
+===========
+Exercise 8: 
+
+>>> (1 + 2) * 3
+
+Result:9
+
+>>> 2 * (3 + 1)
+
+Result:8
+
+Compare these results to the ones you obtained in Exercise 7.
+Record your answer here:
+whith the () added into the system, the Operator precedence of () is higher.
+===========
+Exercise 9: We hypothesize that subtraction has lower precedence than multiplication, which means that 
+multiplication will always be performed before subtraction when an expression is evaluated. 
+We also hypothesize that subtraction has the same precedence as addition. This means that an expression 
+containing (only) the - and + operators will always be evaluated left to right. 
+
+Design a few experiments to help you determine if these hypotheses are true. 
+Record the expressions you type and the results displayed by Python. 
+Are these hypotheses correct? Record your conclusions.
+
+===========
+Exercise 10: Design an experiment to determine if Python supports implicit multiplication. 
+Record the expressions you type and the results displayed by Python. Record your conclusions.
+
+===========
+Exercise 11:
+
+>>> (1 + 2 + 3)
+
+Result:6
+
+>>> (1) + 2
+
+Result:3
+
+>>> (((1 + 2) + 3) + 4) + 5
+
+Result:15
+
+>>> ((((1))))
+
+Result:1
+
+Can Python expressions have superfluous parentheses?
+Write your conclusion here:
+
+What do you conclude?
+
+===========
+Exercise 12: Python's exponentiation operator is **. For example, the expression that calculates 32 ("3, squared") 
+is 3 ** 2.
+
+
+* Type the following expression at the shell prompt to calculate 32. Write the value Python displays when it evaluates the expression.
+
+>>> 3 ** 2
+
+Result:9
+_______________________________________________________
+
+>>> -3 ** 2
+
+Result:-9
+
+Does this expression correctly calculate -3, squared; that is, is the result 9? 
+Write your conclusion here:
+
+
+Based on what you observed, which operation does Python perform first when it evaluates the expression -3 ** 2: 
+exponentiation (i.e., does Python first raise +3 to the power 2, yielding 9, then negate the result, yielding -9) 
+or negation (i.e., does Python first negate +3, yielding -3, then raise -3 to the power 2, yielding 9)?
+Write your conclusion here:
+
+
+Create some experiments to determine the simplest expression that raises -3 to the power 2, yielding 9; 
+i.e., what is the simplest expression that squares -3? Don't use Python's pow function.
+Record your experiments and your conclusions.
+
+===========
+Exercise 13:
+
+Without using Python, predict the values of these expressions. Record your predictions.
+
+11 // 4
+
+Prediction:2
+
+-11 // 4
+
+Prediction:-3
+
+11 // -4
+
+Prediction:-3
+
+-11 // -4
+
+Prediction:2
+
+Now use the Python shell to evaluate these expressions. Were your predictions correct?
+Write your answer here:
+Yes
+===========
+Exercise 14: 
+
+>>> 14 // -5
+
+Result:-3
+
+>>> 14 % -5
+
+Result:-1
+
+>>> (14 // -5) * -5 + (14 % -5)
+
+Result:14
+
+Can you conclude that the identity 14 = (14 // -5) * -5 + (14 % -5) is true?
+Write your conclusion here:
+
+>>> -14 // -5
+
+Result:2
+
+>>> -14 % -5
+
+Result:-4
+
+>>> (-14 // -5) * -5 + (-14 % -5)
+
+Result:-14
+
+Can you conclude that the identity -14 = (-14 // -5) * -5 + (-14 % -5) is true?
+Write your conclusion here:
+
+
+Without using Python, predict the values of these expressions. Record your predictions.
+
+(22 // 7) * 7 + (22 % 7)
+
+Prediction:22
+
+22 // 7
+
+Prediction:3
+
+(22 // 7) * 7
+
+Prediction:21
+
+22 % 7
+
+Prediction:1
+
+(-22 // 7) * 7 + (-22 % 7)
+
+Prediction:-22
+
+-22 // 7
+
+Prediction:-4
+
+(-22 // 7) * 7
+
+Prediction:-28
+
+-22 % 7
+
+Prediction:6
+
+(22 // -7) * -7 + (22 % -7)
+
+Prediction:22
+
+22 // -7
+
+Prediction:-4
+
+(22 // -7) * -7
+
+Prediction:28
+
+22 % -7
+
+Prediction:-6
+
+(-22 // -7) * -7 + (-22 % -7)
+
+Prediction:-22
+
+-22 // -7
+
+Prediction:3
+
+(-22 // -7) * -7
+
+Prediction:-21
+
+-22 % -7
+
+Prediction:-1
+
+Now use the Python shell to evaluate these expressions. Were your predictions correct?
+Write your answer here: Yes
+
+
+Summary: given two integers j and k, record the steps you should follow (without using the Python interpreter) 
+to predict the value Python will calculate when it evaluates the expression j % k
+
+
+
+Last edited: Sept. 2, 2019
