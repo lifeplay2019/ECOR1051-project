@@ -1,0 +1,141 @@
+ECOR 1051 F19 Lab 3 Solutions
+
+Type your solutions to the exercises in the lab handout 
+(file F19_ECOR1051_Lab3.pdf) in this file.
+
+==========
+Exercise 1 
+
+What is the name of the frame containing variable area_of_disk?
+The name of the frame area_of_disk will be global frame
+which is also the subject's name
+What does variable area_of_disk refer to?
+The variablearea_of-disk refer to the variable area whichis the function that gets the area.
+
+What is the name of the frame containing parameter radius?
+area_of_disk
+
+When does the frame appear in the memory diagram?
+The fourth step which refer to the code area = area_of_disk(5.0)
+
+What is the type and value of the object bound to radius? What caused that
+object to be bound to radius?
+def area_of_disk(radius):
+    return math.pi * radius ** 2 type of it is kind of math function
+    with the function been added
+    
+How does PyTutor depict the value the function will return?
+When the code shows that there is return has been shown
+
+When does the frame containing radius disappear?
+At the returning value been added in to the function
+
+What is the name of the frame containing variable area? 
+In the code def area_of_disk(radius):
+	    return math.pi * radius ** 2
+	name=frame_area_of_disk(radius)
+When does area appear in the frame?
+In the final step when plug the value area=area_of_desk(5.0) into the function
+
+What is the type and value of the object bound to area? What caused that
+object to be bound to area?
+The function aded the value as radius and bound into the area.
+with the value area = area_of_disk(5.0)
+
+==========
+Exercise 2 
+
+What value does area_of_disk return each time it is called?
+The first time area_of_disk value is the variable radius, and the radius is equal to 5.0
+The second time this function value is (2.0+3.0)
+The third time the function area = area_of_disk(r) ,give a variable r
+In the fourth function gives the value r=5 also which is =to 2.0+3.0
+==========
+Exercise 3
+
+What is the name of the frame containing parameters inner and outer?
+The frame containing parameters inner is area_of_disk(inner)
+The frame containing parameters outer is area_of_disk(outer)
+
+When does the frame appear in the memory diagram?
+At the start of the code
+def area_of_ring(outer, inner), which gives out of def that shows the namespace of the variable of area of the inner/outer space of the ring
+
+What are the types and values of the objects to inner and outer? 
+inner type is tuple which is 5
+outer type is tuple value is 10
+
+What caused those objects to be bound to inner and outer?
+By giving the def area_of_ring(outer, inner), and def area_of_disk(radius) this give the area of the inner and outer,
+By using return gets the inner and outer area---return area_of_disk(outer) - area_of_disk(inner), so the object always boun to inner and outer
+
+What is the name of the frame containing parameter radius? 
+ def area_of_disk(radius):
+       return math.pi * radius ** 2--this is the function
+
+
+When does that frame appear in the memory diagram? How many times does it appear?
+The frame appear in the diagram when def area_of_ring(outer, inner) and def area_of_disk(radius)
+
+
+Each time the frame containing radius appears, what is the type and value of
+the object bound to radius? What caused that object to be bound to radius?
+The type of the frame containing appera is a kind of function about the radius also with the math dictionary been added.
+With the function def area_of_disk(radius):
+                      return math.pi * radius**2
+                      # so the radius get into the function and become to the area of both inner and outer 
+
+When does the frame containing radius disappear?
+When the code goes onto return math.pi * radius ** 2 and finnally get the result
+
+When does the frame containing inner and outer disappear?
+At the finaly step which contain all the inner and outer together which get a value so the inner and outer will disappear
+
+What is the name of the frame containing variable area? 
+The frame contains the arguments given to the function, the function's local variables, and the address at which the function is executing.
+
+When does area appear in the frame?
+The area appera in the frame when 
+area = area_of_ring(10.0, 5.0)
+
+What is the type and value of the object bound to area? What caused that
+object to be bound to area?
+The type of the value of the object bound to area is function which is 
+def area_of_disk(radius):
+return math.pi * radius ** 2
+with the code written as function outer - inner.
+
+==========
+Exercise 4 
+
+Does area_of_disk automatically return the value of the expression 
+
+    math.pi * radius ** 2
+
+even though it isn't preceded by the keyword, return?  If not, what is the 
+type and value of the object returned by the function?
+No the value that area_of_disk get toward to the result.
+without the return value the result that the area_of_disk does not get any kind of value.
+The type of the objective is just that area radius which is 5.0
+
+==========
+Exercise 5
+
+When cube is called, but before Python executes x = x ** 3, what value is bound
+to parameter x? What value is bound to variable a?
+The value that is bound to parameter x is just the function x = x ** 3 with x has the same value as a which is both 2
+Variable a is bound to 2
+
+After Python executes x = x ** 3, but before the function returns, what value
+is bound to parameter x? What value is bound to variable a?
+The value that is bound to parameter x is just the function x = x ** 3 with x has 2**3 = 8
+a still has the value which is 2
+
+In Python code, does assigning a value to a function parameter change the 
+corresponding function argument?
+In this type of Python code, it has change the corrsponding value which is a.
+So it does change the argument, but nothing has chang for the function.
+Without the return, the final out put is still a=2
+
+==========
+Last edited: Sept. 12, 2019
